@@ -1,0 +1,233 @@
+body {
+    background-color: #444140;
+    color: #eaf2ef;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    font-family: ComputerFont_Normal, serif;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 70px;
+    white-space: nowrap;
+    font-family: ComputerFont_Normal, serif;
+}
+
+.nav {
+    background: #eaf2ef;
+    color: #444140;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-height: 50px;
+    max-height: 20%;
+    margin-bottom: 10px;
+}
+
+.nav_element {
+    color: #444140;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 1.1em;
+}
+
+.nav_element:hover {
+    background: #444140;
+    color: #eaf2ef;
+    border: 3px solid #eaf2ef;
+    border-radius: 3px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.text-shadow {
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.neon-text {
+    text-shadow: 0 0 20px currentcolor;
+}
+
+.blue-background{
+    /*background-color: blue;*/
+}
+.green-background{
+    /*background-color: green;*/
+}
+.yellow-background{
+    /*background-color: yellow;*/
+}
+.purple-background{
+    /*background-color: purple;*/
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Adjust spacing between items */
+    align-items: center; /* Center child elements vertically */
+    height: auto; /* Allow container height to adjust based on content */
+    gap: 10px;
+    margin-top: 20px;
+    max-width: min(1000px, 90%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game_item {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center;
+    width: 30%;
+    overflow: visible;
+    min-height: 0;
+}
+
+.game_item2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    overflow: visible;
+    min-height: 0;
+}
+
+.game_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Allow height to adjust based on the content */
+    padding: 10px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the width/height */
+}
+
+.title {
+    height: auto; /* Let the height adjust automatically */
+    font-size: calc(1.2vw + 1.2em); /* Adjust font size as needed */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide any overflow */
+    text-overflow: ellipsis; /* Add ellipsis (...) if text overflows */
+    font-family: ComputerFont_Bold, serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    //border: 2px solid yellow;
+    line-height: 100px; /* Adjust the line height based on your design */
+    text-align: center; /* Center the text inside the div */
+    width: 100%; /* Ensure the title takes up the full width of the .game_div */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.game_description
+{
+    margin: 5px;
+    font-size: calc(0.5vw + 0.5em);
+}
+
+.tags_section {
+    display: flex;
+    flex-wrap: wrap; /* Allows tags to wrap to the next line if needed */
+    justify-content: center; /* Center tags horizontally */
+    align-items: center; /* Center tags vertically */
+    gap: 10px; /* Add some space between tags */
+    margin: 5px;
+}
+
+.colored-rect {
+    display: inline-flex; /* Use inline-flex to fit content */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    background-color: rgba(0, 0, 0, 0.39); /* Set your desired background color */
+    color: white; /* Set text color */
+    padding: 5px 5px; /* Adjust padding to fit text */
+    border-radius: 8px; /* Adjust the rounding of the corners */
+    box-sizing: border-box; /* Include padding and border in the element’s width and height */
+    text-align: center; /* Center text alignment */
+    font-size: 1em; /* Adjust font size as needed */
+    margin: 1px; /* Add a little margin between tags */
+}
+
+
+.game_item2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    overflow: visible;
+    min-height: 0;
+}
+
+.media_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.img_container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_container img {
+    max-width: 100%; /* Ensure image scales within the container */
+    max-height: 100%; /* Ensure image scales within the container */
+    width: auto;
+    height: auto;
+}
+
+.logo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px; /* Adds some space below the logos */
+}
+
+.github_logo {
+    flex: 1 1 auto;
+    height: 50px;
+    width: 50px;
+}
+
+.github_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.test {
+    flex-basis: 100%
+}
+
+@font-face {
+    font-family: ComputerFont_Bold;
+    src: url('../Fonts/Moder DOS 437 Win.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: ComputerFont_Normal;
+    src: url('../Fonts/Moder DOS 437 Win.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* New class for debugging borders */
+.border-debug {
+    border: 1px solid red;
+}
