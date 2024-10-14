@@ -10,7 +10,7 @@
     display: grid;
     grid-column-start: 2;
     grid-column-end: 2;
-    grid-template-rows: auto 150px 2fr;
+    grid-template-rows: auto 250px 2fr;
 }
 
 .grid-title
@@ -43,9 +43,10 @@
 
 .tag
 {
-    background-color: rgba(255, 255, 255, 0.51);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 5px;
+    color: black;
 }
 
 .title
@@ -69,7 +70,7 @@
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
-    gap: 25px;
+    gap: 50px;
 }
 
 .grid-project-left-img
@@ -78,7 +79,7 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 455px 645px;
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .grid-project-right-img
@@ -87,6 +88,7 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 645px 455px;
+    padding: 30px;
 
 }
 
@@ -121,14 +123,17 @@
 {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /*height: 100%;*/
 }
 
 .description
 {
-    flex-grow: 1;
-    padding-left: 10px;
-    padding-right: 10px;
+    /*flex-grow: 1;*/
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
 }
 
 .read-more-button-section
@@ -148,3 +153,22 @@
     font-size: 0.8em;
 }
 
+.glow
+{
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 55px 5px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.5s ease;
+}
+
+.glow:hover
+{
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 0 55px 5px rgba(255, 255, 255, 0.2);
+}
+
+.imgGlow
+{
+    border-radius: 5px;
+    box-shadow: 0 0 70px 20px rgba(255, 255, 255, 0.07);
+}
