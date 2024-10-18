@@ -3,63 +3,438 @@
 
 
 <head>
-    <title>DEVELOPER JOEL - GAME JAMS</title>
+    <style>
+        body {background-color: #000000;}
+    </style>
+
+
+    <title>DEVELOPER JOEL - GAMEJAMS</title>
     <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="../Style/ProjectsStyle.css">
 </head>
 
-<body>
-<div class="nav">
-    <a class="nav_element" href="index.html"> home </a>
-    <a class="nav_element" href="projects.html">projects</a>
-    <a class="nav_element" href="gamejam.html">game jams</a>
-    <a class="nav_element" href="contact.html">contact</a>
-</div>
+<body style="visibility: hidden;">
+
+<div class="grid border-debug">
+
+    <div class="container border-debug">
+
+        <div class="grid-nav border-debug">
+            <div class=" nav3 border-debug">
+                <a class="nav_element" href="index.html"> home </a>
+                <a class="nav_element" href="projects.html">projects</a>
+                <a class="nav_element" href="gamejam.html">game jams</a>
+                <a class="nav_element" href="contact.html">contact</a>
+            </div>
+        </div>
+
+        <div class="grid-title  border-debug">
+            <div class="pageTitle CenterText">Game Jam</div>
+        </div>
+
+        <div class="gridButtons border-debug">
+            <div class="flexButtons border-debug">
+                <button class="flexButton" onclick="ShowHide('uni')" type="button">uni</button>
+                <button class="flexButton" onclick="ShowHide('gameJam')" type="button">gameJam</button>
+                <button class="flexButton" onclick="ShowHide('misc')" type="button">misc</button>
+            </div>
+        </div>
 
 
-<div class="center-text border-debug">
-    <h1>GameJams</h1>
-</div>
-<div class="container blue-background border-debug">
-    <div class="game_item green-background border-debug">
-        <div class="game_div CenterText border-debug">
-            SS CALVARIA
+        <div class="grid-projects border-debug" id="uni">
+            <div class="projects-flex border-debug">
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Jump Guy
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2022</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Side Scroller</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Platformer</div>
+                            <div class="tag"> Lua</div>
+                            <div class="tag"> Love2d</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Jump Guy is about a cursed guy who is trying to make his way through this mysterious dungeon , in hopes to be released from this curse.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Great Hall Duet
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2022</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Top down</div>
+                            <div class="tag"> Multiplayer</div>
+                            <div class="tag"> Turn based</div>
+                            <div class="tag"> Browser Game</div>
+                            <div class="tag"> P5</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Currently Unavailable
+                            Jump Guy is about a cursed guy who is trying to make his way through this mysterious dungeon , in hopes to be released from this curse.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                </div>
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            SS Calvaria
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2023</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Top-down</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Stealth</div>
+                            <div class="tag"> Exploration</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description CenterText border-debug">
+                            SS Calvaria is a 2D horror game where the player controls an unlucky passenger aboard the eponymous SS Calvãria, a cruise ship. Due to unforeseen circumstances, the player ends up trapped inside the ship and must build a raft to escape.
+                        </div>
+
+                        <div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/Blank16_9.png" alt="Blank16_9">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://www.beyonce.com/" target="_blank" class="link  border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/Blank16_9.png" alt="Blank16_9">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://www.beyonce.com/" target="_blank" class="link  border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                        </div>
+                    </div>
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Project Nano
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2022</div>
+                            <div class="tag"> 3D</div>
+                            <div class="tag"> Third Person</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Shooter</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description CenterText border-debug">
+                            SS Calvaria is a 2D horror game where the player controls an unlucky passenger aboard the eponymous SS Calvãria, a cruise ship. Due to unforeseen circumstances, the player ends up trapped inside the ship and must build a raft to escape.
+                        </div>
+
+                        <div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Trapped in the Pages
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2023</div>
+                            <div class="tag"> 3D</div>
+                            <div class="tag"> Multiplayer</div>
+                            <div class="tag"> CO-OP</div>
+                            <div class="tag"> Puzzle</div>
+                            <div class="tag"> Unreal</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Jump Guy is about a cursed guy who is trying to make his way through this mysterious dungeon , in hopes to be released from this curse.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/Blank16_9.png" alt="Blank16_9">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://www.beyonce.com/" target="_blank" class="link  border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                        </div>
+                    </div>
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Speaker's Notes
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2024</div>
+                            <div class="tag"> 3D</div>
+                            <div class="tag"> First Person</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Educational</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description CenterText border-debug">
+                            SS Calvaria is a 2D horror game where the player controls an unlucky passenger aboard the eponymous SS Calvãria, a cruise ship. Due to unforeseen circumstances, the player ends up trapped inside the ship and must build a raft to escape.
+                        </div>
+
+                        <div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="border-debug tags_section">
-            <div class="colored-rect"> 2021</div>
-            <div class="colored-rect"> 2D</div>
-            <div class="colored-rect"> Top-down</div>
-            <div class="colored-rect"> Single player</div>
-            <div class="colored-rect"> Stealth </div>
-            <div class="colored-rect"> Exploration </div>
+
+        <div class="grid-projects border-debug" style="display: none" id="gameJam">
+            <div class="projects-flex border-debug">
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Soup
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2021</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Side Scroller</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Platformer</div>
+                            <div class="tag"> Lua</div>
+                            <div class="tag"> Love2d</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Jump Guy is about a cursed guy who is trying to make his way through this mysterious dungeon , in hopes to be released from this curse.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/Blank16_9.png" alt="Blank16_9">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://www.beyonce.com/" target="_blank" class="link  border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                        </div>
+                    </div>
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            MAC
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2021</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Top-down</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Stealth</div>
+                            <div class="tag"> Exploration</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description CenterText border-debug">
+                            SS Calvaria is a 2D horror game where the player controls an unlucky passenger aboard the eponymous SS Calvãria, a cruise ship. Due to unforeseen circumstances, the player ends up trapped inside the ship and must build a raft to escape.
+                        </div>
+
+                        <div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="border-debug game_description">
-            SS Calvãria is a 2D horror game where the player controls an unlucky passenger aboard the eponymous SS Calvãria, a cruise ship. Due to unforeseen circumstances, the player ends up trapped inside the ship and must build a raft to escape.
+
+        <div class="grid-projects border-debug" style="display: none" id="misc">
+
+            <div class="projects-flex border-debug">
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Base Project
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2021</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Side Scroller</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Platformer</div>
+                            <div class="tag"> Lua</div>
+                            <div class="tag"> Love2d</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Jump Guy is about a cursed guy who is trying to make his way through this mysterious dungeon , in hopes to be released from this curse.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div class="border-debug"> more... </div>
     </div>
 
-    <div class="game_item2 border-debug">
-        <div class=" border-debug">
-        </div>
-        <div class="img_container border-debug">
-            <img src="../Images/Blank16_9.png" alt="Calvaria Logo">
-        </div>
-        <div class="logo_container border-debug">
-            <div class="github_logo border-debug">
-                <img src="../Images/GithubLogo.png" alt="GithubLogo">
-            </div>
-            <div class="github_logo border-debug">
-                <img src="../Images/GithubLogo.png" alt="GithubLogo">
-            </div>
-            <div class="github_logo border-debug">
-                <img src="../Images/GithubLogo.png" alt="GithubLogo">
-            </div>
-            <div class="github_logo border-debug">
-                <img src="../Images/GithubLogo.png" alt="GithubLogo">
-            </div>
-        </div>
-    </div>
 </div>
+<script src="../JS/foucFix.js"></script>
 </body>
-
-</html>

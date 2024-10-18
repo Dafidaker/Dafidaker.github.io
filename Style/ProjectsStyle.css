@@ -10,7 +10,8 @@
     display: grid;
     grid-column-start: 2;
     grid-column-end: 2;
-    grid-template-rows: auto 250px 2fr;
+    grid-template-rows: auto 250px 150px 2fr;
+    gap: 25px;
 }
 
 .grid-title
@@ -61,7 +62,7 @@
 .grid-projects
 {
     display: grid;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .projects-flex
@@ -157,14 +158,14 @@
 {
     border-radius: 25px;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 55px 5px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.05);
     transition: box-shadow 0.5s ease;
 }
 
 .glow:hover
 {
     transition: box-shadow 0.5s ease;
-    box-shadow: 0 0 55px 5px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.15);
 }
 
 .imgGlow
@@ -172,3 +173,33 @@
     border-radius: 5px;
     box-shadow: 0 0 70px 20px rgba(255, 255, 255, 0.07);
 }
+
+.gridButtons
+{
+    display: grid;
+    grid-row: 3;
+}
+
+.flexButtons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.flexButton
+{
+    min-width: 90px;
+    min-height: 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0px 20px 0 rgba(255, 255, 255, 0.05), 0 0px 25px 0 rgba(255, 255, 255, 0.08);
+}
+
+.flexButton:hover
+{
+    box-shadow: 0 0px 16px 0 rgba(255, 255, 255, 0.24),0 0px 50px 0 rgba(255, 255, 255, 0.19);
+}
+
