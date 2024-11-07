@@ -8,7 +8,7 @@
     </style>
 
 
-    <title>DEVELOPER JOEL - PROJECTS</title>
+    <title>DEVELOPER JOEL - GAMEJAMS</title>
     <link rel="stylesheet" href="../Style/style.css">
     <link rel="stylesheet" href="../Style/ProjectsStyle.css">
 </head>
@@ -23,7 +23,6 @@
             <div class=" nav3 border-debug">
                 <a class="nav_element" href="index.html"> home </a>
                 <a class="nav_element" href="projects.html">projects</a>
-                <a class="nav_element" href="gamejam.html">game jams</a>
                 <a class="nav_element" href="contact.html">contact</a>
             </div>
         </div>
@@ -32,14 +31,19 @@
             <div class="pageTitle CenterText">Projects</div>
         </div>
 
-        <button onclick="ShowHide(uni)" type="button">uni</button>
-        <button onclick="ShowHide(gameJam)" type="button">gameJam</button>
-        <button onclick="ShowHide(misc)" type="button">misc</button>
+        <div class="gridButtons border-debug">
+            <div class="flexButtons border-debug">
+                <button id="uniButton" class="flexButtonSelected" onclick="ShowHide('uni')" type="button">University</button>
+                <button id="gameJamButton" class="flexButton" onclick="ShowHide('gameJam')" type="button">Game jams</button>
+                <button id="miscButton" class="flexButton" onclick="ShowHide('misc')" type="button">Personal </button>
+            </div>
+        </div>
 
-        <div class="grid-projects  border-debug" id="uni">
+
+        <div class="grid-projects border-debug" id="uni">
             <div class="projects-flex border-debug">
 
-                <div class="grid-project-left-img glow  border-debug">
+                <div class="grid-project-left-img glow border-debug">
 
                     <div class="text-section border-debug">
 
@@ -48,7 +52,7 @@
                         </div>
 
                         <div class="tags_section border-debug">
-                            <div class="tag"> 2021</div>
+                            <div class="tag"> 2022</div>
                             <div class="tag"> 2D</div>
                             <div class="tag"> Side Scroller</div>
                             <div class="tag"> Single player</div>
@@ -67,68 +71,355 @@
                             </a>
                        </div>-->
 
-                   </div>
+                    </div>
 
-                   <div class="img-section border-debug">
-                       <div class="border-debug"></div>
-                       <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
-                       <div class="border-debug"></div>
-                       <div class="flex-links-section border-debug">
-                           <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
-                       </div>
-                   </div>
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
 
-               </div>
+                </div>
+
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/JumpGuyImg.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Great Hall Duet
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="red-tag"> Currently Unavailable</div>
+                            <div class="tag"> 2022</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Top down</div>
+                            <div class="tag"> Multiplayer</div>
+                            <div class="tag"> Turn based</div>
+                            <div class="tag"> Browser Game</div>
+                            <div class="tag"> P5</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Great Hall Duel Is a turn-based browser game on a chess-like board where you attack, move and play cards in order to defeat your rival and become the king of your kingdom.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                </div>
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            SS Calvãria
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2023</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Top-down</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Stealth</div>
+                            <div class="tag"> Exploration</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description CenterText border-debug">
+                            SS Calvãria is a 2D horror game where the player controls an unlucky passenger aboard the eponymous SS Calvãria, a cruise ship. Due to unforeseen circumstances, the player ends up trapped inside the ship and must build a raft to escape.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/CalvariaGame.png" alt="CalvariaGame">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://www.beyonce.com/" target="_blank" class="link  border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                            <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
+                        </div>
+                    </div>
 
 
-               <div class="grid-project-right-img  glow border-debug">
-                   <div class="img-section border-debug">
-                       <div class="border-debug"></div>
-                       <img src="../Images/Blank16_9.png" alt="Blank16_9">
-                       <div class="border-debug"></div>
-                       <div class="flex-links-section border-debug">
-                           <a href="https://www.beyonce.com/" target="_blank" class="link  border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
-                           <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
-                           <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
-                           <a href="https://www.beyonce.com/" target="_blank" class="link border-debug"> <img src="../Images/GithubLogo-DarkTheme.png" alt="Blank16_9"></a>
-                       </div>
-                   </div>
+                </div>
 
-                   <div class="text-section border-debug">
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/ProjectNanoGameplay.png" alt="ProjectNanoGameplay">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://dafidaker.itch.io/project-nano" target="_blank" class="link border-debug">
+                            <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
 
-                       <div class="title border-debug">
-                           SS Calvaria
-                       </div>
+                    <div class="text-section border-debug">
 
-                       <div class="tags_section border-debug">
-                           <div class="tag"> 2021</div>
-                           <div class="tag"> 2D</div>
-                           <div class="tag"> Top-down</div>
-                           <div class="tag"> Single player</div>
-                           <div class="tag"> Stealth</div>
-                           <div class="tag"> Exploration</div>
-                           <div class="tag"> Unity</div>
-                       </div>
+                        <div class="title border-debug">
+                            Project Nano
+                        </div>
 
-                       <div class="description CenterText border-debug">
-                           SS Calvaria is a 2D horror game where the player controls an unlucky passenger aboard the eponymous SS Calvãria, a cruise ship. Due to unforeseen circumstances, the player ends up trapped inside the ship and must build a raft to escape.
-                       </div>
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2022</div>
+                            <div class="tag"> 3D</div>
+                            <div class="tag"> Third Person</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Shoot 'em up</div>
+                            <div class="tag"> Unity</div>
+                        </div>
 
-                       <div class="read-more-button-section border-debug">
-                           <a href="https://www.beyonce.com/" class="read-more-button border-debug">
-                               read more...
-                           </a>
-                       </div>
+                        <div class="description CenterText border-debug">
+                            Project NANO is a 3D Third Person Shooter game where the player controls a nanobot, which is part of an experimental treatment for a new disease that has taken the world by storm, with no form of conventional medicine being able to cure it. The nanobots are injected into a patient and proceed to destroy the infection to save the patient.
+                        </div>
 
-                   </div>
-               </div>
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
 
+                    </div>
+                </div>
 
-           </div>
-       </div>
+                <div class="grid-project-left-img glow border-debug">
 
+                    <div class="text-section border-debug">
 
-   </div>
+                        <div class="title border-debug">
+                            Trapped in the Pages
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="red-tag"> Currently Unavailable</div>
+                            <div class="tag"> 2023</div>
+                            <div class="tag"> 3D</div>
+                            <div class="tag"> Multiplayer</div>
+                            <div class="tag"> CO-OP</div>
+                            <div class="tag"> Puzzle</div>
+                            <div class="tag"> Unreal</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Trapped in the Pages is a 3D, cooperative puzzle game where a frustrated writer gets trapped in an alternate dimension made from all of the unfinished stories they have written. In order to escape, the writer must work together with a character from the stories they wrote to solve puzzles that are keeping them trapped, similar to an escape room.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/TrappedInThePagesGame.png" alt="TrappedInThePagesGame">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <!--<a href="https://gamedeviade.itch.io/jump-guy" target="_blank" class="link border-debug">
+                                <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>-->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/SpeakersNotesGame.png" alt="Blank16_9">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://dafidaker.itch.io/speak3rs-n0te5" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Speaker's Notes
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2024</div>
+                            <div class="tag"> 3D</div>
+                            <div class="tag"> First Person</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Educational</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description CenterText border-debug">
+                            A game to practice preparing and holding presentations to a robot audience in a fun and silly setting, using real-world presentation training practices to give feedback on numerous aspects (loudness of voice, gestures, etc.).
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                             <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                 read more...
+                             </a>
+                        </div>-->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid-projects border-debug" style="display: none" id="gameJam">
+            <div class="projects-flex border-debug">
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Soup
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2022</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Top Down</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            Soup is an arcade style game, where you have to collect food and people in order to help feed the homeless.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/SoupGame.png" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://seiiccubus.itch.io/soup" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-project-right-img glow border-debug">
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img src="../Images/MACGame.png" alt="Blank16_9">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                            <a href="https://dafidaker.itch.io/mac-make-a-change" target="_blank" class="link border-debug"> <img src="../Images/itchioLogo-DarkTheme.png" alt="Itch io link"></a>
+                        </div>
+                    </div>
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            MAC
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="tag"> 2023</div>
+                            <div class="tag"> 2D</div>
+                            <div class="tag"> Top-down</div>
+                            <div class="tag"> Single player</div>
+                            <div class="tag"> Unity</div>
+                            <div class="tag"> Horde Shooter</div>
+                        </div>
+
+                        <div class="description CenterText border-debug">
+                            MAC (Make a Difference) is a horde shooter where you portray a volunteer in a Ronald McDonald House, fighting off common challenges that people usually come to these houses to address, such as hunger, loneliness, and exhaustion.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid-projects border-debug" style="display: none" id="misc">
+
+            <div class="projects-flex border-debug">
+
+                <div class="grid-project-left-img glow border-debug">
+
+                    <div class="text-section border-debug">
+
+                        <div class="title border-debug">
+                            Base Project
+                        </div>
+
+                        <div class="tags_section border-debug">
+                            <div class="green-tag"> In Development</div>
+                            <div class="tag"> 2024</div>
+                            <div class="tag"> Unity</div>
+                        </div>
+
+                        <div class="description  border-debug">
+                            In Development
+                            This project includes systems and features that are commonly required but time-consuming to implement, such as audio managers, menus, settings, and more.
+                        </div>
+
+                        <!--<div class="read-more-button-section border-debug">
+                            <a href="https://www.beyonce.com/" class="read-more-button border-debug">
+                                read more...
+                            </a>
+                       </div>-->
+
+                    </div>
+
+                    <div class="img-section border-debug">
+                        <div class="border-debug"></div>
+                        <img  src="../Images/MatrixText.jpg" alt="JumpGuyImg">
+                        <div class="border-debug"></div>
+                        <div class="flex-links-section border-debug">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
 </div>
 <script src="../JS/foucFix.js"></script>

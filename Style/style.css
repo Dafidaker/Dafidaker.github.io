@@ -38,7 +38,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     font-size: 1.1em;
 }
 
@@ -228,12 +227,12 @@ a {
 
 @font-face {
     font-family: ComputerFont_Bold;
-    src: url('../Fonts/Moder DOS 437 Win.ttf') format('truetype');
+    src: url('../Fonts/ShareTechMono-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 @font-face {
     font-family: ComputerFont_Normal;
-    src: url('../Fonts/Moder DOS 437 Win.ttf') format('truetype');
+    src: url('../Fonts/ShareTechMono-Regular.ttf') format('truetype');
     font-weight: bold;
 }
 

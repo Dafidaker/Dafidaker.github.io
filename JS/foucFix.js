@@ -7,6 +7,7 @@ window.onload = () => {
 };
 
 const section = ["uni", "gameJam", "misc"];
+const buttonsId = ["uniButton", "gameJamButton", "miscButton"];
 
 function ShowHide(id)
 {
@@ -16,7 +17,10 @@ function ShowHide(id)
     {
         el.style.display = 'block'
         section.forEach((element) => {if (element !== id) Hide(element)})
+        UpdateButtons(id)
     }
+
+
 }
 
 function Show(a)
@@ -31,6 +35,24 @@ function Hide(a)
     el.style.display = 'none'
 }
 
+function UpdateButtons(selected)
+{
+    let id = selected + "Button"
+    let el = document.getElementById(id)
+
+
+    el.classList.add("flexButtonSelected")
+    el.classList.remove("flexButton")
+    buttonsId.forEach((element) =>
+    {
+        if (element !== id)
+        {
+            let el = document.getElementById(element)
+            el.classList.add("flexButton")
+            el.classList.remove("flexButtonSelected")
+        }
+    })
+}
 //uni
 //gameJam
 //misc
