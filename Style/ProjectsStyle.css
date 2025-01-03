@@ -33,7 +33,7 @@
 
 .pageTitle
 {
-    font-size: 10vmin;
+    font-size: 8rem;
 }
 
 .CenterText
@@ -83,6 +83,7 @@
     min-height: 25%;
     font-size: 7.5vmin;
     align-items: center;
+    text-align: center;
 }
 
 .grid-projects
@@ -157,6 +158,7 @@
 
 .description
 {
+    text-align: center;
     /*flex-grow: 1;*/
     padding-left: 25px;
     padding-right: 25px;
@@ -185,12 +187,12 @@
     border-radius: 25px;
     background-color: rgb(0, 0, 0);
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.05);
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.35s ease;
 }
 
 .glow:hover
 {
-    transition: box-shadow 0.5s ease;
+    transition: box-shadow 0.35s ease;
     box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.15);
 }
 
@@ -216,22 +218,33 @@
 
 .flexButton
 {
+    font-family: MedodicaRegular, serif;
+    font-size: 1.3rem;
     min-width: 130px;
     min-height: 60px;
     border-radius: 10px;
+    border: 3px solid white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    /*
     background-color: #b0b0b0;
     color: #000000;
-    border: none;
+    border: none;*/
     box-shadow: 0 0px 20px 0 rgba(255, 255, 255, 0.05), 0 0px 25px 0 rgba(255, 255, 255, 0.08);
+    transition: box-shadow 0.2s ease;
 }
+
 
 .flexButton:hover
 {
     box-shadow: 0 0px 16px 0 rgba(255, 255, 255, 0.24),0 0px 50px 0 rgba(255, 255, 255, 0.19);
+    transition: box-shadow 0.2s ease;
 }
 
 .flexButtonSelected
 {
+    font-family: MedodicaRegular, serif;
+    font-size: 1.6rem;
     min-width: 130px;
     min-height: 60px;
     border-radius: 10px;
@@ -239,10 +252,12 @@
     color: #000000;
     border: none;
     box-shadow: 0 0px 20px 0 rgba(255, 255, 255, 0.05), 0 0px 25px 0 rgba(255, 255, 255, 0.08);
+    transition: box-shadow 0.2s ease;
 }
 
 .flexButtonSelected:hover
 {
     box-shadow: 0 0px 16px 0 rgba(255, 255, 255, 0.24),0 0px 50px 0 rgba(255, 255, 255, 0.19);
+    transition: box-shadow 0.2s ease;
 }
 

@@ -1,14 +1,24 @@
+html
+{
+    font-size: 16px;
+}
+
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: ComputerFont_Normal, serif;
+    font-family: MedodicaRegular, serif;
 }
 
 h1 {
     margin: 20px;
-    font-size: 70px;
+    font-size: 1.5em;
     white-space: nowrap;
-    font-family: ComputerFont_Normal, serif;
+    font-family: MedodicaRegular, serif;
+}
+
+p
+{
+    margin: 0;
 }
 
 a {
@@ -38,7 +48,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 .nav_element:hover {
@@ -71,10 +81,8 @@ a {
 }
 
 .text {
-    width: 70%;
-    text-align: left;
-    width: 70%;
-    margin-right: 20px; /* Add space between the text and image */
+    width: 100%;
+    text-align: center;
 }
 
 .text strong {
@@ -88,8 +96,9 @@ a {
 
 /* Adjust image */
 .home-profile-section img {
-    width: 150px; /* Adjust image size */
-    height: 150px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover ;
     /*transform: rotate(45deg); /* Rotate image */
 }
 
@@ -102,22 +111,13 @@ a {
     text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-.neon-text {
-    text-shadow: 0 0 5px currentcolor;
+.neon-text-strong {
+    text-shadow: 0 0 15px currentcolor;
+}
+.neon-text-weak {
+    text-shadow: 0 0 7px currentcolor;
 }
 
-.blue-background{
-    /*background-color: blue;*/
-}
-.green-background{
-    /*background-color: green;*/
-}
-.yellow-background{
-    /*background-color: yellow;*/
-}
-.purple-background{
-    /*background-color: purple;*/
-}
 
 .game_item {
     display: flex;
@@ -234,6 +234,12 @@ a {
     font-family: ComputerFont_Normal;
     src: url('../Fonts/ShareTechMono-Regular.ttf') format('truetype');
     font-weight: bold;
+}
+@font-face {
+    font-family: MedodicaRegular;
+    src: url('../Fonts/MedodicaRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* New class for debugging borders */
