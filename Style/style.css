@@ -26,6 +26,35 @@ a {
     text-decoration: none; /* Removes the underline */
 }
 
+img {
+    -webkit-user-drag: none; /* For Safari and Chrome */
+    -moz-user-drag: none;    /* For older Firefox versions */
+    -ms-user-drag: none;     /* For old versions of IE */
+    user-drag: none;         /* Standard property */
+}
+
+@media (min-width: 1120px)
+{
+    .grid{
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: auto 1120px auto;
+    }
+
+    .grid-column-2
+    {
+        grid-column: 2;
+    }
+}
+
+.flex-centered
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .grid-nav
 {
     display: grid;
