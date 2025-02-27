@@ -273,7 +273,7 @@ img {
 
 /* New class for debugging borders */
 .border-debug {
-   //border: 1px solid red;
+   border: 1px solid red;
 }
 
 .border-debug1 {
